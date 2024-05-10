@@ -1,0 +1,39 @@
+Prueba Técnica Zimaltec Soluciones - ebusiness
+-----------------------------------------------------------------------------------------
+
+Crea un repositorio en GitHub donde subas el código de una Minimal API para la gestión de un listado de tareas con los siguiente requisitos:
+    - .NET 8
+    - Guardado en base de datos usando un ORM 
+    - Sistema de cache
+    - Acciones:
+        - Listar
+        - Insertar
+        - Reordenar tareas pendientes
+        - Marcar como "hecho"
+
+Si tienes tiempo y te apetece haz una interfaz de usuario sencilla que consuma la Minimal API
+
+Aclaraciones
+-----------------------------------------------------------------------------------------
+Esta permitido el uso de paquetes Nuget y frameworks
+Usa las buenas prácticas y patrones de diseño que consideres
+
+
+-------------------------------
+
+Reordenar para mi es:
+
+Tarea A -> Orden 1
+
+Tarea B -> Orden 2
+
+Tarea C -> Orden 3
+Tarea D -> Orden 4
+
+Imagínate un ordenar de una App que coges la "Tarea C" y arrastras para colocarla la primera, quedaría así.
+
+Tarea C -> Orden 1
+
+Tarea A -> Orden 2
+
+Tarea B -> Orden 3
