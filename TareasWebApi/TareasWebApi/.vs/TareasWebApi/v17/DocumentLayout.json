@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66A8949B-0B46-4D99-8FEF-CC57DF256C3D}|TareasWebApi.csproj|d:\\repos\\github\\tasks\\tareaswebapi\\tareaswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66A8949B-0B46-4D99-8FEF-CC57DF256C3D}|TareasWebApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66A8949B-0B46-4D99-8FEF-CC57DF256C3D}|TareasWebApi.csproj|d:\\repos\\github\\tasks\\tareaswebapi\\tareaswebapi\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66A8949B-0B46-4D99-8FEF-CC57DF256C3D}|TareasWebApi.csproj|solutionrelative:controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66A8949B-0B46-4D99-8FEF-CC57DF256C3D}|TareasWebApi.csproj|d:\\repos\\github\\tasks\\tareaswebapi\\tareaswebapi\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66A8949B-0B46-4D99-8FEF-CC57DF256C3D}|TareasWebApi.csproj|solutionrelative:context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66A8949B-0B46-4D99-8FEF-CC57DF256C3D}|TareasWebApi.csproj|d:\\repos\\github\\tasks\\tareaswebapi\\tareaswebapi\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66A8949B-0B46-4D99-8FEF-CC57DF256C3D}|TareasWebApi.csproj|solutionrelative:models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66A8949B-0B46-4D99-8FEF-CC57DF256C3D}|TareasWebApi.csproj|d:\\repos\\github\\tasks\\tareaswebapi\\tareaswebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66A8949B-0B46-4D99-8FEF-CC57DF256C3D}|TareasWebApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-11T22:30:38.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tarea.cs",
+              "DocumentMoniker": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\Models\\Tarea.cs",
+              "RelativeDocumentMoniker": "Models\\Tarea.cs",
+              "ToolTip": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\Models\\Tarea.cs",
+              "RelativeToolTip": "Models\\Tarea.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T22:25:03.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
+              "ToolTip": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T22:24:43.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TareasController.cs",
+              "DocumentMoniker": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\Controllers\\TareasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TareasController.cs",
+              "ToolTip": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\Controllers\\TareasController.cs",
+              "RelativeToolTip": "Controllers\\TareasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T22:05:45.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Repos\\github\\Tasks\\TareasWebApi\\TareasWebApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T22:25:31.548Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
