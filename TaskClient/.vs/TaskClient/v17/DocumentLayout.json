@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|c:\\users\\denys javier\\desktop\\taskclient\\views\\taskclient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|solutionrelative:views\\taskclient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|c:\\users\\denys javier\\desktop\\taskclient\\views\\taskclient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|solutionrelative:views\\taskclient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|c:\\users\\denys javier\\desktop\\taskclient\\controllers\\taskclientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|solutionrelative:controllers\\taskclientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Views\\TaskClient\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\TaskClient\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Views\\TaskClient\\Edit.cshtml",
+              "RelativeToolTip": "Views\\TaskClient\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T08:19:05.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Views\\TaskClient\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\TaskClient\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Views\\TaskClient\\Index.cshtml",
+              "RelativeToolTip": "Views\\TaskClient\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T07:09:49.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskClientController.cs",
+              "DocumentMoniker": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Controllers\\TaskClientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TaskClientController.cs",
+              "ToolTip": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Controllers\\TaskClientController.cs",
+              "RelativeToolTip": "Controllers\\TaskClientController.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAiwHYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T07:25:00.326Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
