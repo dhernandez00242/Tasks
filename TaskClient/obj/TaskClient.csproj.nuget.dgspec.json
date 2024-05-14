@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repos\\prueba\\TaskClient\\TaskClient.csproj": {}
+    "D:\\Repos\\github\\Tasks\\TaskClient\\TaskClient.csproj": {}
   },
   "projects": {
-    "D:\\Repos\\prueba\\TaskClient\\TaskClient.csproj": {
+    "D:\\Repos\\github\\Tasks\\TaskClient\\TaskClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\prueba\\TaskClient\\TaskClient.csproj",
+        "projectUniqueName": "D:\\Repos\\github\\Tasks\\TaskClient\\TaskClient.csproj",
         "projectName": "TaskClient",
-        "projectPath": "D:\\Repos\\prueba\\TaskClient\\TaskClient.csproj",
+        "projectPath": "D:\\Repos\\github\\Tasks\\TaskClient\\TaskClient.csproj",
         "packagesPath": "C:\\Users\\Denys Javier\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\prueba\\TaskClient\\obj\\",
+        "outputPath": "D:\\Repos\\github\\Tasks\\TaskClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

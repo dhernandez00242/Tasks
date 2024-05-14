@@ -2,6 +2,7 @@
 using TaskClient.Models;
 using Newtonsoft.Json;
 using System.Text;
+using System.Security.Policy;
 
 namespace TaskClient.Controllers
 {
@@ -9,14 +10,14 @@ namespace TaskClient.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly HttpClient _httpClient;
-       
+
 
         public TaskClientController(IHttpClientFactory httpClientFactory, IConfiguration configuration)
         {
 
             _configuration = configuration;
-            string? ClientStringConnection = _configuration["UrlApis"];      
-          
+            string? ClientStringConnection = _configuration["UrlApis"];
+
             if (!string.IsNullOrEmpty(ClientStringConnection))
             {
                 _httpClient = httpClientFactory.CreateClient();
@@ -35,22 +36,24 @@ namespace TaskClient.Controllers
         /// <returns></returns>
         public async Task<IActionResult> Index()
         {
-           string  url = _httpClient.BaseAddress + "/Listar";
-           var response = await _httpClient.GetAsync(url);
+            string url = _httpClient.BaseAddress + "/Listar";
+            var response = await _httpClient.GetAsync(url);
 
-            if (response.IsSuccessStatusCode){ 
+            if (response.IsSuccessStatusCode)
+            {
 
                 var content = await response.Content.ReadAsStringAsync();
 
-                var tareas = JsonConvert.DeserializeObject<IEnumerable<TaskViewModel>> (content); 
+                var tareas = JsonConvert.DeserializeObject<IEnumerable<TaskViewModel>>(content);
                 return View("Index", tareas);
             }
 
             return View(new List<TaskViewModel>());
         }
 
-        public IActionResult create() { 
-          return View();    
+        public IActionResult create()
+        {
+            return View();
         }
 
         [HttpPost]
@@ -76,76 +79,107 @@ namespace TaskClient.Controllers
             return View(tarea);
         }
 
-       /// <summary>
-       /// 
-       /// </summary>
-       /// <param name="id"></param>
-       /// <returns></returns>
-       public async Task<IActionResult> Details(int id)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> Details(int id)
         {
             string url = _httpClient.BaseAddress + $"/Obtener/{id}";
-            var response = await _httpClient.GetAsync(url);     
-           
+            var response = await _httpClient.GetAsync(url);
+
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                var tarea = JsonConvert.DeserializeObject<TaskViewModel> (content);
+                var tarea = JsonConvert.DeserializeObject<TaskViewModel>(content);
 
                 return View(tarea);
             }
             else
             {
                 return RedirectToAction("Details");
-            }          
+            }
         }
 
 
         /// <summary>
-        /// 
+        ///  Editar  tarea
         /// </summary>
         /// <param name="id"></param>
         /// <param name="tarea"></param>
         /// <returns></returns>
-        [HttpPost]
-       public async Task<IActionResult> Editar(int id, TaskViewModel tarea)
+        public async Task<IActionResult> Edit(int id)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                var json = JsonConvert.SerializeObject(tarea);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                string url = _httpClient.BaseAddress + $"/Obtener/{id}";
+                var response = await _httpClient.GetAsync(url);
 
-                string url = _httpClient.BaseAddress + $"/Editar/{id}";
+                if (response.IsSuccessStatusCode)
+                {
+
+                    var content = await response.Content.ReadAsStringAsync();
+                    var tarea = JsonConvert.DeserializeObject<TaskViewModel>(content);
+                    return View(tarea);
+                }
+                else
+                {
+                    return RedirectToAction("Details");
+                }
+
+            }
+            catch (HttpRequestException ex)
+            {
+                TempData["Error"] = ex.Message;
+                return RedirectToAction("Index");
+            }
+
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, TaskViewModel tarea)
+        {
+
+            if (ModelState.IsValid)
+            {
+                var Json = JsonConvert.SerializeObject(tarea);
+                var content = new StringContent(Json, Encoding.UTF8, "application/json");
+
+                var url = _httpClient.BaseAddress + $"/Editar/{id}";
                 var response = await _httpClient.PutAsync(url, content);
-                
-                if (response.IsSuccessStatusCode) {
-                   return RedirectToAction("Index", new {id});
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index", new { id });
                 }
                 else
                 {
                     ModelState.AddModelError(String.Empty, "Error al actualizar la tarea ");
                 }
             }
+
             return View(tarea);
         }
 
-       
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public async Task<IActionResult>  Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
 
-           string url = _httpClient.BaseAddress + $"/Eliminar/{id}";
-           var response = await _httpClient.DeleteAsync(url);
+            string url = _httpClient.BaseAddress + $"/Eliminar/{id}";
+            var response = await _httpClient.DeleteAsync(url);
 
             if (response.IsSuccessStatusCode)
-            { 
+            {
                 return RedirectToAction("Index");
             }
             else
-            { 
+            {
                 TempData["Error"] = "Error al eliminar la tarea.";
                 return RedirectToAction("Index");
             }
@@ -157,7 +191,7 @@ namespace TaskClient.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public async Task<IActionResult> ReOrdenar (int id)
+        public async Task<IActionResult> ReOrdenar(int id)
         {
             try
             {
@@ -180,7 +214,7 @@ namespace TaskClient.Controllers
 
             }
             catch (HttpRequestException ex)
-            { 
+            {
                 TempData["Error"] = ex.Message;
                 return RedirectToAction("Index");
             }
@@ -217,7 +251,7 @@ namespace TaskClient.Controllers
 
             }
             catch (HttpRequestException ex)
-            { 
+            {
                 TempData["Error"] = ex.Message;
                 return RedirectToAction("Index");
             }
