@@ -17,63 +17,63 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TaskClient
 build_property.RootNamespace = TaskClient
-build_property.ProjectDir = C:\Users\Denys Javier\Desktop\TaskClient\
+build_property.ProjectDir = D:\Repos\github\Tasks\TaskClient\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Denys Javier\Desktop\TaskClient
+build_property.MSBuildProjectDirectory = D:\Repos\github\Tasks\TaskClient
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/Home/Index.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/Home/Privacy.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/Shared/Error.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/TaskClient/create.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/TaskClient/create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza0NsaWVudFxjcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/TaskClient/Details.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/TaskClient/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza0NsaWVudFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/TaskClient/Edit.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/TaskClient/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza0NsaWVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/TaskClient/Index.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/TaskClient/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza0NsaWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/TaskClient/Marcar.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/TaskClient/Marcar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza0NsaWVudFxNYXJjYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/TaskClient/ReOrdenar.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/TaskClient/ReOrdenar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza0NsaWVudFxSZU9yZGVuYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/_ViewImports.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/_ViewStart.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Denys Javier/Desktop/TaskClient/Views/Shared/_Layout.cshtml]
+[D:/Repos/github/Tasks/TaskClient/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0tbfg8ll4t

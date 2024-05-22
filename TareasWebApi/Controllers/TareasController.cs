@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Threading;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OutputCaching;
 using Microsoft.EntityFrameworkCore;
 using TareasWebApi.Context;
@@ -164,12 +165,12 @@ namespace TareasWebApi.Controllers
         }
 
 
-        [HttpPut("ReOrdenar/{id}")]
-        public async Task<ActionResult<IEnumerable<Tarea>>> Ordenar(int id)
+        [HttpPut("ReOrdenar/{id}/{nuevoOrden}")]
+        public async Task<ActionResult<IEnumerable<Tarea>>> ReOrdenar(int id, int nuevoOrden)
         {
             try
             {
-                // Obtener la tarea que se va a reordenar
+
                 var tareaAMover = await _context.Tareas.FindAsync(id);
                 if (tareaAMover == null)
                 {
@@ -179,33 +180,48 @@ namespace TareasWebApi.Controllers
                 // Obtener todas las tareas ordenadas por id de manera ascendente
                 var tareas = await _context.Tareas.OrderBy(t => t.Orden).ToListAsync();
 
-                // Mover la tarea al primer lugar
-                tareas.Remove(tareaAMover);
-                tareas.Insert(0, tareaAMover);
+                int ordenActual = tareaAMover.Orden;
 
-                // Reasignar los IDs de manera consecutiva
-                for (int i = 0; i < tareas.Count; i++)
+                if (nuevoOrden < ordenActual)
                 {
-                    tareas[i].Orden = i + 1;
+                    // Mover arriba
+                    foreach (var t in tareas.Where(t => t.Orden >= nuevoOrden && t.Orden < ordenActual))
+                    {
+                        t.Orden++;
+                    }
                 }
+                else if (nuevoOrden > ordenActual)
+                {
+                    // Mover abajo
+                    foreach (var t in tareas.Where(t => t.Orden > ordenActual && t.Orden <= nuevoOrden))
+                    {
+                        t.Orden--;
+                    }
+                }
+
+                tareaAMover.Orden = nuevoOrden;
+
+                // Reordenar 
+                tareas = tareas.OrderBy(t => t.Orden).ToList();
 
                 await _context.SaveChangesAsync();
                 await _outputCacheStore.EvictByTagAsync("Cache", default);  // Invalidar la cache
 
                 return Ok(tareas);
-
             }
-
             catch (Exception ex)
             {
                 return StatusCode(500, $"Error al ordenar las tareas: {ex.Message}");
             }
         }
 
+
         private bool TareaExists(int id)
         {
             return _context.Tareas.Any(e => e.Id == id);
         }
+
+
 
     }
 }

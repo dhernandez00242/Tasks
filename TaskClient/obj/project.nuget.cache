@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VFYb9juP+RpD4J7OmyBzN/5et+KwjqGEbsqTF5Cg/4DrKKKemC4Y/mNAA96EoCpai3LFS+9M6JjeVfkSEDEqqg==",
+  "dgSpecHash": "0vNG/xmmhwcUMOm45U4B6XdvyXpO97bJ6mLEy/isCTxwC/eaExvomagjOmaOG6U9cVnsBqIC7H4HkdvQdv8IRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\TaskClient.csproj",
+  "projectFilePath": "D:\\Repos\\github\\Tasks\\TaskClient\\TaskClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Denys Javier\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Denys Javier\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

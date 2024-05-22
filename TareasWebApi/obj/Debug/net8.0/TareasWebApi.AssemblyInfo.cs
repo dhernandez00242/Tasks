@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TareasWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dce16cf12475065ea3bd7367c35cc68378c6d811")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52f85291ac8011f585b319acb745547e3a589709")]
 [assembly: System.Reflection.AssemblyProductAttribute("TareasWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TareasWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,6 @@
+@Tareas_MinimalWebApi_HostAddress = http://localhost:5121
+
+GET {{Tareas_MinimalWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+

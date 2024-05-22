@@ -1,37 +1,30 @@
 ﻿@model TaskClient.Models.TaskViewModel
 
-<div class=" card text-primary">
-    <div class=" card-header text-center ">
-        <h5>Tarea</h5>
+<div class="card text-primary">
+    <div class="card-header text-center">
+        <h5>ReOrdenar Tarea</h5>
     </div>
-    <div class=" card-body ">
-        <dl class="row">
-            <dt class="col-sm-2 text-center text-dark">
-                @Html.DisplayNameFor(model => model.Orden)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Orden)
-            </dd>
+    <div class="card-body text-primary">
+        <div class="row">
+            <div class="col-md-12">
+                <form asp-action="ReOrdenar" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" name="id" />
 
-            <dt class="col-sm-2 text-center text-dark">
-                @Html.DisplayNameFor(model => model.Nombre)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Nombre)
-            </dd>
+                    <div class="form-group">
+                        <label for="NuevoOrden" class="control-label">Nuevo Orden</label>
+                        <input id="NuevoOrden" name="nuevoOrden" class="form-control" />
+                    </div>
 
-            <dt class="col-sm-2 text-center text-dark">
-                @Html.DisplayNameFor(model => model.Estado)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Estado)
-            </dd>
-
-        </dl>
-    </div>
-    <div class=" card-footer text-center">
-        <a asp-action="Index" class=" btn btn-outline-success btn-sm">volver a la lista</a>
+                    <div class="card-footer text-center">
+                        <div class="form-group">
+                            <input type="submit" value="ReOrdenar" class="btn btn-outline-primary btn-sm" />
+                            <a asp-action="Index" class="btn btn-outline-success btn-sm">Volver a la lista</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
-
 

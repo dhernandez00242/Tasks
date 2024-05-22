@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\",
+  "WorkspaceRootPath": "D:\\Repos\\github\\Tasks\\TaskClient\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|c:\\users\\denys javier\\desktop\\taskclient\\views\\taskclient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|d:\\repos\\github\\tasks\\taskclient\\controllers\\taskclientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|solutionrelative:controllers\\taskclientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|d:\\repos\\github\\tasks\\taskclient\\views\\taskclient\\reordenar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|solutionrelative:views\\taskclient\\reordenar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|d:\\repos\\github\\tasks\\taskclient\\views\\taskclient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|solutionrelative:views\\taskclient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|c:\\users\\denys javier\\desktop\\taskclient\\views\\taskclient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|d:\\repos\\github\\tasks\\taskclient\\views\\taskclient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|solutionrelative:views\\taskclient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|c:\\users\\denys javier\\desktop\\taskclient\\controllers\\taskclientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|solutionrelative:controllers\\taskclientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|d:\\repos\\github\\tasks\\taskclient\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5BB166C9-22C2-4724-AE99-365CE50690FA}|TaskClient.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Views\\TaskClient\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\TaskClient\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Views\\TaskClient\\Edit.cshtml",
-              "RelativeToolTip": "Views\\TaskClient\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-13T08:19:05.557Z"
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Repos\\github\\Tasks\\TaskClient\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Repos\\github\\Tasks\\TaskClient\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-22T15:19:05.526Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Repos\\github\\Tasks\\TaskClient\\Views\\TaskClient\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\TaskClient\\Edit.cshtml",
+              "ToolTip": "D:\\Repos\\github\\Tasks\\TaskClient\\Views\\TaskClient\\Edit.cshtml",
+              "RelativeToolTip": "Views\\TaskClient\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T08:19:05.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Views\\TaskClient\\Index.cshtml",
+              "DocumentMoniker": "D:\\Repos\\github\\Tasks\\TaskClient\\Views\\TaskClient\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\TaskClient\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Views\\TaskClient\\Index.cshtml",
+              "ToolTip": "D:\\Repos\\github\\Tasks\\TaskClient\\Views\\TaskClient\\Index.cshtml",
               "RelativeToolTip": "Views\\TaskClient\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAAjAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACkAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-13T07:09:49.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TaskClientController.cs",
-              "DocumentMoniker": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Controllers\\TaskClientController.cs",
+              "DocumentMoniker": "D:\\Repos\\github\\Tasks\\TaskClient\\Controllers\\TaskClientController.cs",
               "RelativeDocumentMoniker": "Controllers\\TaskClientController.cs",
-              "ToolTip": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\Controllers\\TaskClientController.cs",
+              "ToolTip": "D:\\Repos\\github\\Tasks\\TaskClient\\Controllers\\TaskClientController.cs",
               "RelativeToolTip": "Controllers\\TaskClientController.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAiwHYAAAAxAAAA",
+              "ViewState": "AQIAAPYAAAAAAAAAAAAawAYBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T07:25:00.326Z"
+              "WhenOpened": "2024-05-13T07:25:00.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReOrdenar.cshtml",
+              "DocumentMoniker": "D:\\Repos\\github\\Tasks\\TaskClient\\Views\\TaskClient\\ReOrdenar.cshtml",
+              "RelativeDocumentMoniker": "Views\\TaskClient\\ReOrdenar.cshtml",
+              "ToolTip": "D:\\Repos\\github\\Tasks\\TaskClient\\Views\\TaskClient\\ReOrdenar.cshtml",
+              "RelativeToolTip": "Views\\TaskClient\\ReOrdenar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T15:17:44.414Z",
+              "EditorCaption": ""
             }
           ]
         }

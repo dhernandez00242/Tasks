@@ -191,11 +191,11 @@ namespace TaskClient.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public async Task<IActionResult> ReOrdenar(int id)
+        public async Task<IActionResult> ReOrdenar(int id, int nuevoOrden)
         {
             try
             {
-                string url = _httpClient.BaseAddress + "/Listar";
+                string url = _httpClient.BaseAddress + $"/Obtener/{id}";
                 var response = await _httpClient.GetAsync(url);
 
                 if (!response.IsSuccessStatusCode)
@@ -203,7 +203,7 @@ namespace TaskClient.Controllers
 
                 var content = await response.Content.ReadAsStringAsync();
 
-                url = _httpClient.BaseAddress + $"/ReOrdenar/{id}";
+                url = _httpClient.BaseAddress + $"/ReOrdenar/{id}/{nuevoOrden}";
 
                 response = await _httpClient.PutAsync(url, new StringContent(content));
 
@@ -232,7 +232,7 @@ namespace TaskClient.Controllers
         {
             try
             {
-                string url = _httpClient.BaseAddress + "/Listar";
+                string url = _httpClient.BaseAddress + $"/Obtener/{id}";
                 var response = await _httpClient.GetAsync(url);
 
                 if (!response.IsSuccessStatusCode)
@@ -247,7 +247,8 @@ namespace TaskClient.Controllers
                 if (!response.IsSuccessStatusCode)
                     throw new HttpRequestException("Error al marcar la tarea.");
 
-                return await Details(id);
+               // return await Details(id);
+                return RedirectToAction("Index");
 
             }
             catch (HttpRequestException ex)

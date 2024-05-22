@@ -5697,11 +5697,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\TaskClient.csproj",
+      "projectUniqueName": "D:\\Repos\\github\\Tasks\\TaskClient\\TaskClient.csproj",
       "projectName": "TaskClient",
-      "projectPath": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\TaskClient.csproj",
+      "projectPath": "D:\\Repos\\github\\Tasks\\TaskClient\\TaskClient.csproj",
       "packagesPath": "C:\\Users\\Denys Javier\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Denys Javier\\Desktop\\TaskClient\\obj\\",
+      "outputPath": "D:\\Repos\\github\\Tasks\\TaskClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5767,7 +5767,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
