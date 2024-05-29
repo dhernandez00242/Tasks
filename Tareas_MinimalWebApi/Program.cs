@@ -1,9 +1,6 @@
-
-using System.Threading;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.OutputCaching;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.FileProviders;
 using Tareas_MinimalWebApi.Context;
 using Tareas_MinimalWebApi.Entitys;
 
@@ -28,7 +25,13 @@ namespace Tareas_MinimalWebApi
                 options => options.UseSqlServer(connectionString)
             );
 
+            
+            // agregando cache a las APIs
+            builder.Services.AddOutputCache(); 
+
             var app = builder.Build();
+
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -39,6 +42,9 @@ namespace Tareas_MinimalWebApi
 
             app.UseHttpsRedirection();
 
+            // Activando uso de OutPutCache
+            app.UseOutputCache();   
+        
             app.UseAuthorization();
 
 
@@ -46,11 +52,12 @@ namespace Tareas_MinimalWebApi
             {
 
                 var tareas = await context.Tareas.OrderBy(t => t.Orden).ToListAsync();
-               // var tareas = await context.Tareas.ToListAsync();
+                // var tareas = await context.Tareas.ToListAsync();
                 return tareas;
-            });
+            }).CacheOutput(c => c.Expire(TimeSpan.FromSeconds(15)).Tag("Listar_Tareas"));
 
-            
+
+
             app.MapGet("/api/Tareas/Obtener/{id:int}", async  Task<Results<NotFound, Ok<Tarea>>> (int id, AppDbContext context) =>
             {
                 var tarea = await context.Tareas.FirstOrDefaultAsync( p => p.Id == id);
@@ -60,9 +67,9 @@ namespace Tareas_MinimalWebApi
                 }
 
                 return TypedResults.Ok(tarea);
-            });
+            }).CacheOutput(c => c.Expire(TimeSpan.FromSeconds(15)).Tag("Obtener_Tarea")); ;
 
-            app.MapPost("/api/Tareas/Crear", async Task<Results<Ok<Tarea>, BadRequest<string>>> (Tarea tarea, AppDbContext context) =>
+            app.MapPost("/api/Tareas/Crear", async Task<Results<Ok<Tarea>, BadRequest<string>>> (Tarea tarea, AppDbContext context, IOutputCacheStore outputCacheStore) =>
             {
                 try
                 {
@@ -84,6 +91,7 @@ namespace Tareas_MinimalWebApi
 
                     context.Tareas.Add(tarea);
                     await context.SaveChangesAsync();
+                    await outputCacheStore.EvictByTagAsync("Listar_Tareas", default);
 
                     return TypedResults.Ok(tarea);
                 }
@@ -94,7 +102,7 @@ namespace Tareas_MinimalWebApi
             });
 
 
-            app.MapPut("/api/Tareas/Editar/{id:int}", async Task<Results<NotFound, NoContent, BadRequest<string>>> (int id, Tarea tarea, AppDbContext context) =>
+            app.MapPut("/api/Tareas/Editar/{id:int}", async Task<Results<NotFound, NoContent, BadRequest<string>>> (int id, Tarea tarea, AppDbContext context, IOutputCacheStore outputCacheStore) =>
             {
                if (id != tarea.Id)
                {
@@ -110,11 +118,12 @@ namespace Tareas_MinimalWebApi
 
                context.Update(tarea);
                await context.SaveChangesAsync();
-               return TypedResults.NoContent();
+                await outputCacheStore.EvictByTagAsync("Listar_Tareas", default);
+                return TypedResults.NoContent();
             });
 
 
-            app.MapPut("/api/Tareas/Marcar/{id:int}", async Task<Results<Ok<Tarea>, NotFound, NoContent, BadRequest<string>>> (int id, Tarea tarea, AppDbContext context) =>
+            app.MapPut("/api/Tareas/Marcar/{id:int}", async Task<Results<Ok<Tarea>, NotFound, NoContent, BadRequest<string>>> (int id, Tarea tarea, AppDbContext context, IOutputCacheStore outputCacheStore) =>
             {
                 if (id != tarea.Id)
                 {
@@ -132,7 +141,7 @@ namespace Tareas_MinimalWebApi
 
                 context.Update(tarea);
                 await context.SaveChangesAsync();
-
+                await outputCacheStore.EvictByTagAsync("Listar_Tareas", default);
 
                 return TypedResults.Ok(new Tarea
                 {
@@ -145,7 +154,7 @@ namespace Tareas_MinimalWebApi
             });
 
 
-            app.MapPut("/api/Tareas/ReOrdenar/{id:int}/{nuevoOrden:int}", async Task<Results<Ok<List<Tarea>>, NotFound, NoContent, BadRequest<string>>> (int id, int nuevoOrden, AppDbContext context) =>
+            app.MapPut("/api/Tareas/ReOrdenar/{id:int}/{nuevoOrden:int}", async Task<Results<Ok<List<Tarea>>, NotFound, NoContent, BadRequest<string>>> (int id, int nuevoOrden, AppDbContext context, IOutputCacheStore outputCacheStore) =>
             {
                 try
                 {
@@ -183,7 +192,7 @@ namespace Tareas_MinimalWebApi
                     tareas = tareas.OrderBy(t => t.Orden).ToList();
 
                     await context.SaveChangesAsync();
-
+                    await outputCacheStore.EvictByTagAsync("Listar_Tareas", default);
 
                     var lTareas = await context.Tareas.OrderBy(t => t.Orden).ToListAsync();
 
@@ -199,7 +208,7 @@ namespace Tareas_MinimalWebApi
 
             });
 
-            app.MapDelete("/api/Tareas/Eliminar/{id:int}", async  Task <Results <NoContent, NotFound>> (int id, AppDbContext context) =>
+            app.MapDelete("/api/Tareas/Eliminar/{id:int}", async  Task <Results <NoContent, NotFound>> (int id, AppDbContext context, IOutputCacheStore outputCacheStore) =>
             {
                 var tarea = await context.Tareas.FindAsync(id);
 
@@ -210,6 +219,7 @@ namespace Tareas_MinimalWebApi
 
                 context.Tareas.Remove(tarea);
                 await context.SaveChangesAsync();
+                await outputCacheStore.EvictByTagAsync("Listar_Tareas", default);
 
                 return TypedResults.NoContent();
 
